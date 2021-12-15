@@ -1,0 +1,93 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  height: 200vh;
+  background-color: lightgrey;
+  border: 5px solid black;
+}
+.div-outer {
+  height: 300px;
+  width: 300px;
+  background-color: darkred;
+  margin: auto;
+}
+.div-inner {
+  height: 150px;
+  width: 150px;
+  background-color: lightyellow;
+}
+.div-content {
+  height: 75px;
+  width: 75px;
+  background-color: lightgreen;
+}
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 10px;
+}
+.fixed {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+}
+.relative {
+  position: relative;
+  left: -20px;
+  top: 30px;
+}
+.wrapper {
+  height: 200px;
+  width: 200px;
+  /* background-color: white; */
+  /* border: 2px solid black; */
+  margin: 10px auto;
+  position: relative;
+}
+.content-1,
+.content-2,
+.content-3 {
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+.content-1 {
+  background-color: goldenrod;
+  z-index: 2;
+  top: 20px;
+  left: 20px;
+}
+.content-2 {
+  background-color: cadetblue;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
+}
+.content-3 {
+  background-color: aquamarine;
+  z-index: 0;
+}
+header,
+footer {
+  background-color: whitesmoke;
+  border: 2px solid red;
+  text-align: center;
+  z-index: 100;
+}
+header {
+  position: sticky;
+  top: 10px;
+}
+footer {
+  position: sticky;
+  bottom: 5px;
+}
+section {
+  margin-bottom: 900px;
+}

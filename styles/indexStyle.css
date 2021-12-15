@@ -1,0 +1,67 @@
+/*
+    selektor {
+    deklarasi 
+    }
+*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+header {
+  color: violet;
+}
+
+.main-header {
+  color: aqua;
+}
+
+#header-id {
+  color: brown;
+}
+
+.card {
+  background-color: darkgray;
+  margin-bottom: 5px;
+  border: 10px solid black;
+  border-radius: 20px;
+  padding-top: 20px;
+}
+
+.card:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
+.card:active {
+  font-weight: bold;
+}
+
+.name-input:focus {
+  background-color: lightblue;
+}
+
+a:hover {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.card::before {
+  content: "hello";
+  background-color: brown;
+}
+.card::after {
+  content: "world";
+  background-color: brown;
+}
+/** MEDIA QUERY 
+*/
+@media (max-width: 600px) {
+  .card:hover {
+    background-color: red;
+  }
+}

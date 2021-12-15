@@ -1,0 +1,107 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+.canvas {
+  height: 100vh;
+  background-color: lightgrey;
+  border: 5px solid black;
+}
+
+.flexbox,
+.grid {
+  height: 50%;
+  border: 1px solid black;
+}
+header {
+  text-align: center;
+}
+.wrapper {
+  height: 75%;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.inside-wrapper {
+  height: 30%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  padding: 10px 0px;
+  flex-wrap: wrap;
+}
+.card {
+  height: 30%;
+  min-width: 50%;
+  background-color: lightcoral;
+  border: 0.5px solid black;
+}
+.around {
+  justify-content: space-around;
+}
+.evenly {
+  justify-content: space-evenly;
+}
+.between {
+  justify-content: space-between;
+}
+.one {
+  flex: 1;
+}
+.two {
+  flex: 2;
+}
+.three {
+  flex: 3;
+}
+.new-card {
+  height: 25%;
+  width: 50%;
+  background-color: brown;
+  border: 2px solid yellow;
+  padding: 5px;
+  display: flex;
+}
+.image {
+  flex: 2;
+  border-right: 1px solid yellowgreen;
+  background-color: white;
+}
+.image-text {
+  flex: 3;
+  padding: 5px;
+}
+.image-text > p {
+  color: white;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: auto 100px auto;
+  background-color: #2196f3;
+  padding: 10px;
+  grid-gap: 20px 50px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .grid-container {
+    grid-template-columns: 100px auto auto;
+  }
+}
+@media (min-width: 700px) {
+  .grid-container {
+    grid-template-columns: 100px auto auto auto;
+  }
+}
